@@ -1,11 +1,8 @@
 """
 Name: William Nathan
 Date: 11/6/24
-Topic: Functions
+Description
 """
-from docutils.nodes import title
-from s3fs.utils import title_case
-
 
 def main():
     def sunny_message():
@@ -18,7 +15,7 @@ def main():
         print("You'll need boots to keep your feet warm!")
 
     weather = input("What is the weather outside? (sunny, rainy, snowy) ")
-    weather = title_case(weather)
+    weather = weather.title()
 
     if weather == "Sunny":
         sunny_message()
@@ -31,10 +28,5 @@ def main():
         print("Incorrect input, please try again")
 
 
-#if __name__ == "__main__":
-    #main()
-
-
-
-
-
+if __name__ == "__main__":
+    main()
